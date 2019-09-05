@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,96 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RegistrationPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ud-gh-Fd2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background4" translatesAutoresizingMaskIntoConstraints="NO" id="Ch0-CD-ocF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZR-GN-DXg">
+                                        <rect key="frame" x="8" y="131" width="359" height="385"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7me-2i-mkw">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="385"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPy-RW-YR4">
+                                                    <rect key="frame" x="8" y="8" width="343" height="369"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtf-1z-BOm" customClass="BorderViewDrawClass" customModule="RegistrationPage" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="79" width="327" height="30"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5M3-N5-L3t" customClass="BorderViewDrawClass" customModule="RegistrationPage" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="117" width="327" height="30"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="jtf-1z-BOm" firstAttribute="leading" secondItem="5M3-N5-L3t" secondAttribute="leading" id="0Cc-Yt-3AH"/>
+                                                        <constraint firstItem="jtf-1z-BOm" firstAttribute="trailing" secondItem="5M3-N5-L3t" secondAttribute="trailing" id="C7J-zy-21x"/>
+                                                        <constraint firstItem="jtf-1z-BOm" firstAttribute="trailing" secondItem="JPy-RW-YR4" secondAttribute="trailingMargin" id="QIO-pJ-EYD"/>
+                                                        <constraint firstItem="5M3-N5-L3t" firstAttribute="top" secondItem="jtf-1z-BOm" secondAttribute="bottom" constant="8" symbolic="YES" id="W8Q-LB-60r"/>
+                                                        <constraint firstItem="jtf-1z-BOm" firstAttribute="leading" secondItem="JPy-RW-YR4" secondAttribute="leadingMargin" id="Wi1-uq-K1j"/>
+                                                        <constraint firstItem="jtf-1z-BOm" firstAttribute="top" secondItem="JPy-RW-YR4" secondAttribute="top" constant="79" id="vdk-R4-24Z"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JPy-RW-YR4" firstAttribute="leading" secondItem="7me-2i-mkw" secondAttribute="leadingMargin" id="14V-1J-GdH"/>
+                                                <constraint firstItem="JPy-RW-YR4" firstAttribute="bottom" secondItem="7me-2i-mkw" secondAttribute="bottomMargin" id="5AQ-6M-DKb"/>
+                                                <constraint firstItem="JPy-RW-YR4" firstAttribute="trailing" secondItem="7me-2i-mkw" secondAttribute="trailingMargin" id="6iw-gu-7va"/>
+                                                <constraint firstItem="JPy-RW-YR4" firstAttribute="top" secondItem="7me-2i-mkw" secondAttribute="topMargin" id="f6e-HU-yG9"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="385" id="YEY-2W-vpK"/>
+                                        </constraints>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PZR-GN-DXg" firstAttribute="leading" secondItem="6Ud-gh-Fd2" secondAttribute="leadingMargin" id="6G3-hK-tkV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ch0-CD-ocF" secondAttribute="trailing" id="8zb-EK-ytD"/>
+                                    <constraint firstItem="Ch0-CD-ocF" firstAttribute="centerX" secondItem="PZR-GN-DXg" secondAttribute="centerX" id="AhC-lW-ERa"/>
+                                    <constraint firstItem="Ch0-CD-ocF" firstAttribute="top" secondItem="6Ud-gh-Fd2" secondAttribute="top" id="JuI-NI-O7G"/>
+                                    <constraint firstItem="Ch0-CD-ocF" firstAttribute="centerX" secondItem="6Ud-gh-Fd2" secondAttribute="centerX" id="MiB-Yv-8JS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ch0-CD-ocF" secondAttribute="bottom" id="ezW-07-7fA"/>
+                                    <constraint firstItem="Ch0-CD-ocF" firstAttribute="centerY" secondItem="PZR-GN-DXg" secondAttribute="centerY" id="lhi-jl-ZlU"/>
+                                    <constraint firstItem="Ch0-CD-ocF" firstAttribute="leading" secondItem="6Ud-gh-Fd2" secondAttribute="leading" id="oN5-x8-uOr"/>
+                                    <constraint firstItem="Ch0-CD-ocF" firstAttribute="centerY" secondItem="6Ud-gh-Fd2" secondAttribute="centerY" id="ztN-6Q-85D"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Ud-gh-Fd2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6oL-AU-tEH"/>
+                            <constraint firstItem="6Ud-gh-Fd2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="K08-0c-XZh"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ud-gh-Fd2" secondAttribute="trailing" id="aWy-OT-0MA"/>
+                            <constraint firstItem="6Ud-gh-Fd2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hZR-rO-7Cp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtFieldEmail" destination="JPy-RW-YR4" id="wFn-WC-ytv"/>
+                        <outlet property="txtFieldPassword" destination="JPy-RW-YR4" id="E1T-7e-e1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background4" width="1242" height="2208"/>
+    </resources>
 </document>

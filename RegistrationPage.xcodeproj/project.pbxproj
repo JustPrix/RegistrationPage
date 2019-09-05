@@ -15,6 +15,7 @@
 		CB6937CA2321128400B03404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6937C82321128400B03404 /* LaunchScreen.storyboard */; };
 		CB6937D52321128900B03404 /* RegistrationPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6937D42321128900B03404 /* RegistrationPageTests.swift */; };
 		CB6937E02321128900B03404 /* RegistrationPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6937DF2321128900B03404 /* RegistrationPageUITests.swift */; };
+		CB6937EF2321165F00B03404 /* BorderViewDrawClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6937EE2321165F00B03404 /* BorderViewDrawClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CB6937DB2321128900B03404 /* RegistrationPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistrationPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6937DF2321128900B03404 /* RegistrationPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageUITests.swift; sourceTree = "<group>"; };
 		CB6937E12321128A00B03404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6937EE2321165F00B03404 /* BorderViewDrawClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderViewDrawClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		CB6937BB2321128300B03404 /* RegistrationPage */ = {
 			isa = PBXGroup;
 			children = (
+				CB6937ED2321161D00B03404 /* New Group */,
 				CB6937BC2321128300B03404 /* AppDelegate.swift */,
 				CB6937BE2321128300B03404 /* ViewController.swift */,
 				CB6937C02321128300B03404 /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				CB6937E12321128A00B03404 /* Info.plist */,
 			);
 			path = RegistrationPageUITests;
+			sourceTree = "<group>";
+		};
+		CB6937ED2321161D00B03404 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CB6937EE2321165F00B03404 /* BorderViewDrawClass.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6937C52321128400B03404 /* RegistrationPage.xcdatamodeld in Sources */,
+				CB6937EF2321165F00B03404 /* BorderViewDrawClass.swift in Sources */,
 				CB6937BF2321128300B03404 /* ViewController.swift in Sources */,
 				CB6937BD2321128300B03404 /* AppDelegate.swift in Sources */,
 			);
