@@ -11,9 +11,9 @@ import UIKit
 class BorderViewDrawClass: UITextField {
 
     func SetBottomBorder() {
-        var bottomLine = CALayer()
+        let bottomLine = CALayer()
         
-        bottomLine = CGRect.init(x: 0.0, y: self.frame.height-1, width: self.frame.width, height: 1.0)
+        bottomLine.frame = CGRect.init(x: 0.0, y: self.frame.height-1, width: self.frame.width, height: 1.0)
         bottomLine.backgroundColor = UIColor.darkGray.cgColor
         
         self.borderStyle = UITextBorderStyle.none
@@ -30,12 +30,12 @@ class BorderViewDrawClass: UITextField {
         super.init(coder: aDecoder)
         SetBottomBorder()
     }
-    
+    /*
     override func draw(_ rect: CGRect) {
         SetBottomBorder()
     }
     
-    /*
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
